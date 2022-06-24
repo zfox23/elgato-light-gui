@@ -1,0 +1,39 @@
+{
+  "name": "elgato-light-gui",
+  "version": "1.0.0",
+  "description": "Control your Elgato lights with a simple, cross-platform GUI built using NodeJS and NodeGUI.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack && qode ./dist/index.js",
+    "debug": "webpack && qode --inspect ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfox23/elgato-light-gui.git"
+  },
+  "author": "Zach Fox",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/zfox23/elgato-light-gui/issues"
+  },
+  "homepage": "https://github.com/zfox23/elgato-light-gui#readme",
+  "dependencies": {
+    "@nodegui/nodegui": "^0.54.0",
+    "@types/bonjour": "^3.5.10",
+    "elgato-light-api": "github:zfox23/elgato-light-api",
+    "sharp": "^0.30.7"
+  },
+  "devDependencies": {
+    "@nodegui/packer": "^1.5.0",
+    "@types/node": "^18.0.0",
+    "@types/sharp": "^0.30.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "native-addon-loader": "^2.0.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
